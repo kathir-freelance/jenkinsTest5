@@ -4,7 +4,6 @@ pipeline {
     stage('build') {
       steps {
         echo 'started'
-        bat 'echo "welcome"'
       }
     }
 
@@ -27,7 +26,7 @@ pipeline {
 
     stage('deploy') {
       steps {
-        bat 'echo "deployed"'
+        echo 'deployed'
       }
     }
 
